@@ -21,14 +21,14 @@ export default class ImageGallery extends Component {
   componentDidMount() {
     this.setState({ loading: true });
     console.log('this.state :>> ', this.state);
-    this.fetchArticles("cat");
+    this.fetchArticles("");
   }
 
   fetchArticles = (searchQuery, page) => {
     console.log('searchQuery :>> ', searchQuery);
     // const {searchQuery, page} =this.state
     articlesApi
-      .fatchArticlesWithQuery()
+      .fatchArticlesWithQuery(searchQuery, page)
       .then((articles) =>
         this.setState((prevState) => ({
           articles,
