@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Loader from "../Loader/Loader.js";
 import Modal from "../Modal/Modal.js";
 import Searchbar from "../Searchbar/Searchbar";
-import articlesApi from "./articlesApi";
+import articlesApi from "E:/GoIt/React/goit-react-hw-03-image-finder/src/services/articlesApi";
 
 // import axios from "axios";
 import s from "./ImageGallery.module.css";
